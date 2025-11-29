@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head runat="server">
+    <title>Services</title>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Pentagon LLP" />
+    <meta name="keywords" content="Pentagon LLP" />
+    <meta property="og:title" content="Pentagon LLP" />
+    <meta property="og:description" content="Pentagon LLP" />
+    <meta property="og:image" content="./images/logo.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="Content-Language" content="EN" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <link rel="stylesheet" href="settings.css" />
+    <link rel="stylesheet" href="liquid-icon.min.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/logo3.jpg" />
+    <link
+      href="https://db.onlinewebfonts.com/c/29e9a3f5cf847428382058f505969b17?family=Nassim+Regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ea85b1115b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ea85b1115b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .col-md-4 a:hover {
+        color: white;
+        /* background-color: #0580c6; */
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .banner-main {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-header-fixed" id="header-top-fixed"></div>
+
+    <header class="header" id="header-fixed">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img src="./images/logo.png" class="logo"
+          /></a>
+          <button
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navbar-collapse"
+            data-target="#navbarNav"
+            data-toggle="collapse"
+            type="button"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end ml-auto">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a href="services.html"
+                  >Services <i class="fa-solid fa-chevron-down"></i
+                ></a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="services.html#financial-management-suite"
+                      >Financial Planning and Analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#cost-excellence-suite"
+                      >Capital Growth Counsel</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#transformational-excellence"
+                      >Cost Analysis and Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#strategic-capital-growth-counsel"
+                      >Business and Technology Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#taxation-mastery-suite"
+                      >Taxation</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a href="#">Company Incorporation &amp; Annual Filings</a>
+                  </li>
+                  <li><a href="#">Book keeping &amp; Outsourcing</a></li>
+                  <li><a href="#">TDS Return Filing</a></li> -->
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a href="#"
+                  >Business Basket
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li> -->
+
+              <li class="nav-item"><a href="comingsoon.html">Business Basket</a></li>
+
+              <li class="nav-item dropdown">
+                <a href="#"
+                  >Knowledge Bank <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a href="#">Latest News </a></li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#">Acts <i class="fa-solid fa-caret-right"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax Act </a></li>
+                      <li><a href="#">Companies Act </a></li>
+                      <li>
+                        <a href="#"
+                          >Companies ( Donation to National ) Fund Act
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Limited Liability Partnership Act </a>
+                      </li>
+                      <li><a href="#">Partnership Act </a></li>
+                      <li><a href="#">Societies Registration Act </a></li>
+                      <li><a href="#">Competition Act </a></li>
+                      <li>
+                        <a href="#"
+                          >Monopolies and Restrictive Trade Practices Act
+                        </a>
+                      </li>
+                      <li><a href="#">Chartered Accountants Act </a></li>
+                      <li><a href="#">Company Secretaries Act </a></li>
+                      <li><a href="#">Cost And Works Accountants Act </a></li>
+                      <li><a href="#">WealthTax Act </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Rules <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax Rules </a></li>
+                      <li><a href="#">Company Law Rules </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Circulars <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax </a></li>
+                      <li><a href="#">Company Law Circulars </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Notifaction <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax </a></li>
+                      <li><a href="#">Company Law Notification </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Forms <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Income Tax </a></li>
+                      <li><a href="#">Wealth Tax </a></li>
+                      <li><a href="#">ROC </a></li>
+                      <li>
+                        <a href="#">Limited Liability Partnership (LLP) </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="#">FAQ</a></li>
+              <li class="nav-item"><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <!-- <div class="services-container"> -->
+    <!-- <section id="services" class="hm-services">
+      <div class="container aos-init">
+        <div class="page-title fancy-title-underlined text-center">
+          <h2>Embark on Financial Peace with PENTAGON:</h2>
+          <p>Explore our Services</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="services-box">
+              <span class="iconbox-icon-container">
+                <i class="fa-solid fa-sack-dollar" style="color: #0580c6"></i
+              ></span>
+              <h3 class="services-heading">Financial Management Suite</h3>
+              <p>
+                Unlock the power of financial mastery with our Financial
+                Management Suite. From budgeting to financial forecasting, we
+                provide comprehensive solutions that empower organizations to
+                navigate financial complexities with confidence. We enhance
+                financial decision-making, ensuring stability and growth in a
+                rapidly changing economic landscape.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-box">
+              <span class="iconbox-icon-container">
+                <i
+                  class="fa-solid fa-hand-holding-dollar"
+                  style="color: #0580c6"
+                ></i
+              ></span>
+              <h3>Cost Excellence Suite</h3>
+              <p>
+                In the world of business, efficiency is paramount. Our Cost
+                Excellence Suite offers tailor-made strategies to optimize costs
+                without compromising quality. We delve deep into your
+                operations, identifying areas for improvement and implementing
+                cost-effective solutions that enhance profitability while
+                maintaining the highest standards.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-box">
+              <span class="iconbox-icon-container">
+                <i class="fa-solid fa-bolt" style="color: #0580c6"></i
+              ></span>
+              <h3>Transformational Excellence</h3>
+              <p>
+                Embrace the future with our Transformational Excellence suite.
+                We guide organizations through digital transformation,
+                innovation, and disruptive strategies, reshaping industries.
+                Navigate change seamlessly, unlock growth, and stay ahead in
+                today's dynamic business environment. Elevate your journey with
+                transformative solutions.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-box">
+              <span class="iconbox-icon-container">
+                <i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i
+              ></span>
+              <h3>Strategic Capital Growth Counsel</h3>
+              <p>
+                Every successful venture requires the right funding and capital
+                strategy. Strategic Capital Growth Counsel offers expert
+                fundraising, investment, and capital allocation guidance.
+                Whether you're a startup or an established entity, we help you
+                secure the resources you need to boost your strategic growth
+                initiatives.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-box">
+              <span class="iconbox-icon-container">
+                <i class="fa-solid fa-award" style="color: #0580c6"></i
+              ></span>
+              <h3>Taxation Mastery Suite</h3>
+              <p>
+                Taxes play a pivotal role in the realm of financial management,
+                serving as a crucial aspect that demands careful attention. The
+                Taxation Mastery Suite emerges as an invaluable resource,
+                offering a wide array of comprehensive solutions aimed at
+                effectively managing various tax-related matters.
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
+<style>
+  .services-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    scroll-snap-align: start;
+}
+</style>
+    <!-- <div class="page-title fancy-title-underlined text-center">
+      <h2>Embark on Financial Peace with PENTAGON:</h2>
+      <p>Explore our Services</p>
+    </div> -->
+    <div class="services-container">
+    <section id="financial-management-suite" class="services-points-title">
+      <h3
+        class="page-title fancy-title-underlined text-center"
+        style="color: #0580c6"
+      >
+        Financial Planning and Analysis
+      </h3>
+      <div class="services-img-align">
+        <div class="services-points" data-x="left"
+        data-y="370"
+        data-speed="600"
+        data-start="3500">
+        <p>Empowering businesses with financial clarity and strategic foresightWe provide data-driven insights and structured financial solutions to ensure sustainable growth, optimal cash flow, and risk management.
+        </p>
+
+      <ul class="fa-ul">
+        <li>
+          <span class="fa-li"
+            >
+            <!-- <i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i> -->
+            </span
+          ><b>Services:</b>
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Business Budgeting and Forecasting
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Cash Flow Management and Optimization
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Financial Performance Analysis and KPI Benchmarking
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Risk Assessment and Financial Advisory
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Structured Finance Solutions (Securitization, Asset-Backed Lending, Debt Restructuring)
+        </li>
+        <!-- <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Working Capital Management
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Financial Reporting and Analysis
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Performance Measurement and KPI Analysis
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Financial Modelling and Projections
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Treasury and Cash Management
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Corporate Finance Strategy
+        </li> -->
+
+        
+      </ul>
+      </div>
+    
+        <div>
+          <!-- <figure> -->
+          <img src="./images/financial-management.png" width="100%" />
+        <!-- </figure> -->
+      </div>
+      </div>
+    </section>
+    <section id="cost-excellence-suite" class="services-points-title">
+      <h3
+        class="page-title fancy-title-underlined text-center"
+        style="color: #0580c6"
+      >Capital Growth Counsel
+
+      </h3>
+      <div class="services-img-align">
+        <div>
+          <!-- <figure> -->
+          <img src="./images/cost-excellence.png" width="100%" />
+        <!-- </figure> -->
+      </div>
+      <div class="services-points">
+        <p>Driving business expansion, investment opportunities, and corporate restructuringWe assist businesses in securing funding, restructuring operations, and scaling effectively to achieve long-term success.
+
+        </p>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"
+              >
+              <!-- <i
+                class="fa-solid fa-sack-dollar"
+                style="color: #0580c6"
+              ></i> -->
+              </span
+            ><b>Services:</b>
+          </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Family Business Revival and Succession Planning
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Business Step-up Strategies (Scaling and Expansion planning)
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Fundraising and Investment
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Mergers & Acquisitions Consulting (Due Diligence, Deal Structuring)
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Corporate Restructuring and Turnaround Strategies
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Financial Engineering (Optimal Capital Structuring, Leverage Strategies)
+        </li>
+        <!-- <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Procurement Optimization
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Inventory Management
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Overhead Cost Reduction
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i
+              class="fa-solid fa-hand-holding-dollar"
+              style="color: #0580c6"
+            ></i></span
+          >Lean Management and Process Improvement
+        </li> -->
+
+      </ul>
+    </div>
+
+      </div>
+    </section>
+    <section
+      id="transformational-excellence"
+      class="services-points-title"
+    >
+    <h3
+    class="page-title fancy-title-underlined text-center"
+    style="color: #0580c6"
+  >Cost Analysis and Management</h3>
+      <div class="services-img-align">
+      <div class="services-points">
+        <p>Optimizing costs to maximize profitability and efficiencyWe help businesses streamline expenses, eliminate inefficiencies, and implement robust cost management frameworks to improve financial performance.
+
+
+        </p>
+      <ul class="fa-ul">
+        <li>
+          <span class="fa-li"
+            >
+            <!-- <i
+              class="fa-solid fa-sack-dollar"
+              style="color: #0580c6"
+            ></i> -->
+            </span
+          ><b>Services:</b>
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Cost Control and Reduction Strategies
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Activity-Based Costing (ABC) and Overhead Allocation
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Profitability and Break-even Analysis
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Supply Chain Cost Optimization
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Cost Audit and Compliance
+        </li>
+        <!-- <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Organizational Restructuring
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Technology Integration and Adoption
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Employee Training and Development
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Cultural Transformation
+        </li>
+        <li>
+          <span class="fa-li"
+            ><i class="fa-solid fa-bolt" style="color: #0580c6"></i></span
+          >Innovation and Idea Management
+        </li> -->
+      </ul>
+    </div>
+    <div>
+      <!-- <figure> -->
+      <img src="./images/transformational-excellence.png" width="100%" />
+    <!-- </figure> -->
+  </div>
+    
+  </div>
+
+    </section>
+    <section
+      id="strategic-capital-growth-counsel"
+      class="services-points-title"
+    >
+    <h3
+    class="page-title fancy-title-underlined text-center"
+    style="color: #0580c6"
+  >Business and Technology Solutions</h3>
+      <div class="services-img-align">
+        <div>
+          <!-- <figure> -->
+            <img src="./images/capital-growth.png" width="100%" />
+          <!-- </figure> -->
+        </div>
+        <div class="services-points">
+          <p>Harnessing AI, blockchain, and digital assets to transform businessesWe help businesses adopt cutting-edge technologies, including AI, digital assets, and blockchain, to enhance efficiency, security, and scalability.
+
+          </p>
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"
+                >
+                <!-- <i
+                  class="fa-solid fa-sack-dollar"
+                  style="color: #0580c6"
+                ></i> -->
+                </span
+              ><b>Services:</b>
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >AI Implementation for Business Process Automation
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Blockchain INtegration for Secure Transactions and Smart Contracts
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Digital Asset Strategy and Tokenization for Business Growth
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >ERP and IT System Implementation Consulting
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Cybersecurity and Compliance Advisory
+            </li>
+            <!-- <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Portfolio Construction and Management
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Mergers and Acquisitions (M&A) Advisory
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Due Diligence for Investments
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Investment Evaluation and Selection
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Private Equity and Venture Capital Guidance
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i
+                  class="fa-solid fa-arrow-up-right-dots"
+                  style="color: #0580c6"
+                ></i></span
+              >Exit Strategies and Divestment Planning
+            </li> -->
+           
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+    <section id="taxation-mastery-suite" class="services-points-title">
+      <h3
+        class="page-title fancy-title-underlined text-center"
+        style="color: #0580c6"
+      >Taxation</h3>
+      <div class="services-img-align">
+        
+        <div class="services-points">
+          <p>Comprehensive tax solutions for compliance and financial efficiencyWe ensure businesses remain compliant with tax regulations while leveraging strategic tax planning to minimize liabilities and maximize profits.
+          </p>
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"
+                >
+                <!-- <i
+                  class="fa-solid fa-sack-dollar"
+                  style="color: #0580c6"
+                ></i> -->
+                </span
+              ><b>Services:</b>
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Direct and Indirect Tax Advisory (GST, Income Tax, etc.)
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Tax Compliance and Regulatory Filings
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >International Taxation and Transfer Pricing
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Tax Structuring for Businesses and Startups
+            </li>
+            <!-- <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Tax Incentives and Credits
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Transfer Pricing
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Tax Audits and Dispute Resolution
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >Estate and Wealth Tax Planning
+            </li>
+            <li>
+              <span class="fa-li"
+                ><i class="fa-solid fa-award" style="color: #0580c6"></i></span
+              >VAT/GST Consulting and Implementation
+            </li> -->
+            
+          </ul>
+        </div>
+        <div>
+          
+            <img src="./images/taxation-mastery.png" width="100%" />
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 aos-init aos-animate" data-aos="fade-left">
+          <h3>Who we are</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 aos-init aos-animate" data-aos="fade-left">
+          <h3>What we do</h3>
+          <ul>
+            <li>
+              <a href="services.html#financial-management-suite"
+                >Financial Planning and Analysis</a
+              >
+            </li>
+            <li>
+              <a href="services.html#cost-excellence-suite"
+                >Capital Growth Counsel</a
+              >
+            </li>
+            <li>
+              <a href="services.html#transformational-excellence"
+                >Cost Analysis and Management</a
+              >
+            </li>
+            <li>
+              <a href="services.html#strategic-capital-growth-counsel"
+                >Business and Technology Solutions</a
+              >
+            </li>
+            <li>
+              <a href="services.html#taxation-mastery-suite"
+                >Taxation</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 aos-init aos-animate" data-aos="fade-left">
+          <h3>Important Link</h3>
+          <ul>
+            <li>
+              <a
+                href="http://incometaxindia.gov.in/Pages/default.aspx"
+                target="_blank"
+                >Income Tax Dept.</a
+              >
+            </li>
+            <li>
+              <a href="http://cbec.gov.in/" target="_blank"
+                >Central Board of Excise &amp; Customs</a
+              >
+            </li>
+            <li>
+              <a href="http://mca.gov.in/" target="_blank"
+                >Ministry of Corporate Affairs</a
+              >
+            </li>
+            <li>
+              <a href="http://epfindia.com/site_en/" target="_blank"
+                >Employees Provident Fund</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-left">
+          <h3>Contact Us</h3>
+          <p>
+            Room No. 3, MD Arcade<br />
+            Pantheerankavu, Calicut<br />
+            673019
+          </p>
+          <!-- <p><a href="tel:01414072000"></a></p> -->
+          <p>
+            <a href="mailto:info.pentagonllp@gmail.com"
+              >info.pentagonllp@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <style>
+      /* body{
+        margin: 5%;
+      } */
+
+      .services-points{
+        font-size: large;
+        line-height: 40px;
+        padding: 5%
+      }
+
+      .services-points-title{
+        min-height: 100vh;
+      }
+    </style>
+  </body>
+</html>

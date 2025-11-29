@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head runat="server">
+    <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Pentagon LLP" />
+    <meta name="keywords" content="Pentagon LLP" />
+    <meta property="og:title" content="Pentagon LLP" />
+    <meta property="og:description" content="Pentagon LLP" />
+    <meta property="og:image" content="./images/logo.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="Content-Language" content="EN" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <link rel="stylesheet" href="settings.css" />
+    <link rel="stylesheet" href="liquid-icon.min.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="icon" type="image/x-icon" href="./images/logo3.jpg" />
+    <link href="https://db.onlinewebfonts.com/c/29e9a3f5cf847428382058f505969b17?family=Nassim+Regular" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ea85b1115b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ea85b1115b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .col-md-4 a:hover {
+        color: white;
+        /* background-color: #0580c6; */
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .banner-main{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-header-fixed" id="header-top-fixed"></div>
+
+    <header class="header" id="header-fixed">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img src="./images/logo.png" class="logo"
+          /></a>
+          <button
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navbar-collapse"
+            data-target="#navbarNav"
+            data-toggle="collapse"
+            type="button"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end ml-auto">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a href="services.html"
+                  >Services <i class="fa-solid fa-chevron-down"></i
+                ></a>
+
+                <!-- <ul class="dropdown-menu">
+                  <li><a href="#">Financial Management Suite</a></li>
+                  <li><a href="#">Cost Excellence Suite</a></li>
+                  <li><a href="#">Transformational Excellence</a></li>
+                  <li>
+                    <a href="#">Strategic Capital Growth Counsel</a>
+                  </li>
+                  <li><a href="#">Taxation Mastery Suite</a></li>
+                </ul> -->
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="services.html#financial-management-suite"
+                      >Financial Planning and Analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#cost-excellence-suite"
+                      >Capital Growth Counsel</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#transformational-excellence"
+                      >Cost Analysis and Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#strategic-capital-growth-counsel"
+                      >Business and Technology Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html#taxation-mastery-suite"
+                      >Taxation</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a href="#">Company Incorporation &amp; Annual Filings</a>
+                  </li>
+                  <li><a href="#">Book keeping &amp; Outsourcing</a></li>
+                  <li><a href="#">TDS Return Filing</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item"><a href="comingsoon.html">Business Basket</a></li>
+              <!-- <li class="nav-item dropdown">
+                <a href="#">Business Basket 
+                </a>
+                 -->
+              <li class="nav-item dropdown">
+                <a href="#"
+                  >Knowledge Bank <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a href="#">Latest News </a></li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#">Acts <i class="fa-solid fa-caret-right"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax Act </a></li>
+                      <li><a href="#">Companies Act </a></li>
+                      <li>
+                        <a href="#"
+                          >Companies ( Donation to National ) Fund Act
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Limited Liability Partnership Act </a>
+                      </li>
+                      <li><a href="#">Partnership Act </a></li>
+                      <li><a href="#">Societies Registration Act </a></li>
+                      <li><a href="#">Competition Act </a></li>
+                      <li>
+                        <a href="#"
+                          >Monopolies and Restrictive Trade Practices Act
+                        </a>
+                      </li>
+                      <li><a href="#">Chartered Accountants Act </a></li>
+                      <li><a href="#">Company Secretaries Act </a></li>
+                      <li><a href="#">Cost And Works Accountants Act </a></li>
+                      <li><a href="#">WealthTax Act </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Rules <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax Rules </a></li>
+                      <li><a href="#">Company Law Rules </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Circulars <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax </a></li>
+                      <li><a href="#">Company Law Circulars </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Notifaction <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">IncomeTax </a></li>
+                      <li><a href="#">Company Law Notification </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-submenu">
+                    <a href="#"
+                      >Forms <i class="fa-solid fa-caret-right"></i
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Income Tax </a></li>
+                      <li><a href="#">Wealth Tax </a></li>
+                      <li><a href="#">ROC </a></li>
+                      <li>
+                        <a href="#">Limited Liability Partnership (LLP) </a>
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul>
+
+              </li>
+              <li class="nav-item"><a href="#">FAQ</a></li>
+              <li class="nav-item"><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about" class="hm-about">
+        <div class="container">
+          <div class="row aos-init aos-animate" data-aos="fade-left">
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="abt-img d-flex flex-column justify-content-center">
+                <img src="./images/about-img.jpg" class="img-fluid" />
+                <div class="side-icn">
+                  <img src="./images/logo3.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-5 pl-md-5">
+              <div class="content">
+                <h3>About Company</h3>
+                <p class="demo-sub-about-text">
+                  At <strong>Pentagon Corporate Strategists LLP</strong>&nbsp;,
+                  we're not just consultants; we're partners in your journey
+                  toward excellence. With our diverse suite of services, we help
+                  businesses and individuals achieve financial peace and thrive in
+                  a rapidly changing world. Each element of our PENTAGON framework
+                  is meticulously crafted to give you the strategic insights and
+                  solutions you need to succeed.
+                </p>
+                <!-- <a href="#" class="rd-mr"
+                  >Readmoreㅤ<i class="fa-solid fa-chevron-right"></i
+                ></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 aos-init aos-animate" data-aos="fade-left">
+              <h3>Who we are</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 aos-init aos-animate" data-aos="fade-left">
+              <h3>What we do</h3>
+              <ul>
+                <li>
+                  <a href="services.html#financial-management-suite"
+                    >Financial Planning and Analysis</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html#cost-excellence-suite"
+                    >Capital Growth Counsel</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html#transformational-excellence"
+                    >Cost Analysis and Management</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html#strategic-capital-growth-counsel"
+                    >Business and Technology Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="services.html#taxation-mastery-suite"
+                    >Taxation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 aos-init aos-animate" data-aos="fade-left">
+              <h3>Important Link</h3>
+              <ul>
+                <li>
+                  <a
+                    href="http://incometaxindia.gov.in/Pages/default.aspx"
+                    target="_blank"
+                    >Income Tax Dept.</a
+                  >
+                </li>
+                <li>
+                  <a href="http://cbec.gov.in/" target="_blank"
+                    >Central Board of Excise &amp; Customs</a
+                  >
+                </li>
+                <li>
+                  <a href="http://mca.gov.in/" target="_blank"
+                    >Ministry of Corporate Affairs</a
+                  >
+                </li>
+                <li>
+                  <a href="http://epfindia.com/site_en/" target="_blank"
+                    >Employees Provident Fund</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 aos-init aos-animate" data-aos="fade-left">
+              <h3>Contact Us</h3>
+              <p>
+                Room No. 3, MD Arcade<br />
+                Pantheerankavu, Calicut<br />
+                673019
+              </p>
+              <!-- <p><a href="tel:01414072000"></a></p> -->
+              <p>
+                <a href="mailto:info.pentagonllp@gmail.com"
+                  >info.pentagonllp@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC2ad2NXss9Xeiho0XX_IWbXhW3Se39MFQ",
+        authDomain: "pentagonllp-e4355.firebaseapp.com",
+        projectId: "pentagonllp-e4355",
+        storageBucket: "pentagonllp-e4355.appspot.com",
+        messagingSenderId: "1043622041286",
+        appId: "1:1043622041286:web:ec7c7219f640d7741e69c7",
+        measurementId: "G-R5Z0GYEPN2"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script> -->
+  </body>
+</html>
